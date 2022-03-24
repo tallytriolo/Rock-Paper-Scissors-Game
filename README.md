@@ -28,9 +28,10 @@ Super Mario x Sonic: choose who you are! :D
 
 # Installation
 • Download the Python program:
-[Windows users] (https://docs.microsoft.com/en-us/windows/python/beginners)
-[Mac users] (https://www.python.org/downloads/)
+[Windows users](https://docs.microsoft.com/en-us/windows/python/beginners)
+[Mac users](https://www.python.org/downloads/)
 • Create your new repository
+• Open your Terminal
 • Git clone: https://github.com/tallytriolo/Rock-Paper-Scissors-Game.git
 
 ========================================================================
