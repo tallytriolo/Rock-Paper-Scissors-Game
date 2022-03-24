@@ -6,10 +6,10 @@ A virtual version of rock paper scissors! Two players compete by choosing an opt
 # Games Features and Rules
 To start the game, each player has 3 golden coins and the player has to choose your character (Super Mario or Sonic). After that, the game will start and the player needs to choose a weapon: Rock, Paper, or Scissors. 
 When both have selected, the following rules are applied to determine the winner:
-	•	Rock beats Scissors
-	•	Scissors beat Paper
-	•	Paper beats Rock
-	•	Both players choosing the same weapon results in a tie.
+- Rock beats Scissors
+- Scissors beat Paper
+- Paper beats Rock
+- Both players choosing the same weapon results in a tie.
 
 Throughout the game, the user will choose their weapon with an input, and the computer will make your choice. The game will last until either the computer or user wins three times, or the other player looses your golden coins. At the end of the game, your program will display the scores and the winner.
 
@@ -27,12 +27,12 @@ Super Mario x Sonic: choose who you are! :D
 ========================================================================
 
 # Installation
-• Download the Python program:
+- Download the Python program:
 [Windows users](https://docs.microsoft.com/en-us/windows/python/beginners)
-[Mac users](https://www.python.org/downloads/)
-• Create your new repository
-• Open your Terminal
-• Git clone: https://github.com/tallytriolo/Rock-Paper-Scissors-Game.git
+or [Mac users](https://www.python.org/downloads/)
+- Create your new repository
+- Open your Terminal
+- Git clone: https://github.com/tallytriolo/Rock-Paper-Scissors-Game.git
 
 ========================================================================
 
