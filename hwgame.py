@@ -1,7 +1,7 @@
 from random import randint
 
-# re-import game variables
-from Rock-Paper-Scissors-Game import gameVars, compareFunctions
+# re-import game variables and function
+from rpsGame import gameVars, compareFunctions
 
 
 def winorlose(status):
