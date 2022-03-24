@@ -1,7 +1,7 @@
 from random import randint
 
 # re-import game variables and function
-from rpsGame import gameVars, compareFunctions
+from gameComponents import gameVars, compareFunctions
 
 
 def winorlose(status):
