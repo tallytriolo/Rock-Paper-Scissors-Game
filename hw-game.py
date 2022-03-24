@@ -6,11 +6,15 @@ from random import randint
 # an array is a special type of container that can hold multiple items
 # arrays are indexed (their contents are assigned a number)
 # the index always starts at 0
+
 choices = ["rock", "paper", "scissors"]
 
-sonic_coins = 3
-super_mario_coins = 3
-total_coins = 3
+user = "Sonic"
+computer = "Super Mario"
+
+sonic_coins = 1
+super_mario_coins = 1
+total_coins = 1
 
 # True or False are Boolean data types
 # essentially, booleans are equivalent to an on or off switch, 1 or 0.
@@ -40,6 +44,18 @@ def winorlose(status):
 		#this might generate a bug that we need to fix later
 		choice = input("Y / N? ")
 
+def won(status):
+	global sonic_coins
+	sonic_coins += 1
+	print("Sonic", status, "You Won!")
+	print('super_mario_coins =', computer, '\n', name, '=', sonic_coins)
+
+def loser(status):
+	global super_mario_coins
+	super_mario_coins -= 1
+	print("Super Mario", status, "You are a loser!")
+	print('super_mario_coins =', computer, '\n', name, '=', sonic_coins)
+
 # player_choice == False
 while sonic_choice is False:
 	print("============*/ RPS GAME */===========")
@@ -59,14 +75,14 @@ while sonic_choice is False:
 		print("Your chose to quit")
 		exit()
 
-	print("user chose: " + sonic_choice)
+	print("Sonic chose: " + sonic_choice)
 
 	# this will be the AI choice -> a random pick from the choices array
 	super_mario_choice = choices[randint(0, 2)]
 
 	print("Super Mario chose: " + super_mario_choice)
 
-	if super_mario_choice == sonic_choice
+	if super_mario_choice == sonic_choice:
 		print("tie")
 
 	elif super_mario_choice == "rock":
