@@ -1,18 +1,25 @@
 from random import randint
+from gameComponents import gameVars, compare_function
 
-# re-import game variables and function
-from gameComponents import gameVars, compareFunctions
+#welcome_message = "Hi. Welcome to the Rock-Paper-Scissors game.\nYou are Sonic character and the computer \nit will be Super Mario character."
+#choices = ["rock", "paper", "scissors"]
 
+#sonic_coins = 1
+#super_mario_coins = 1
+#total_coins = 1
+
+#sonic_choice = False
+#super_mario_choice = -1
 
 def winorlose(status):
 
-	print("You", status, "!!!", " Would you like to play again?")
-	gameVars.choice = input("Y / N? ")
+	print("You", status, "the game!!!", " Would you like to play again?")
+	choice = input("Y / N? ")
 
-	if gameVars.choice == "N" or gameVars.choice == "n":
-		print("You chose to quit! Better luck next time.")
+	if choice == "N" or choice == "n":
+		print("You chose to quit! See you next time.")
 		exit()
-	elif gameVars.choice == "Y" or gameVars.choice == "y":
+	elif choice == "Y" or choice == "y":
 		global sonic_coins
 		global super_mario_coins
 		global total_coins
@@ -21,7 +28,7 @@ def winorlose(status):
 		gameVars.super_mario_coins = gameVars.total_coins
 	else:
 		print("Make a valid choice - Y or N")
-		gameVars.choice = input("Y / N? ")
+		choice = input("Y / N? ")
 
 while gameVars.sonic_choice is False:
 	print("•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$•$")
@@ -48,21 +55,19 @@ while gameVars.sonic_choice is False:
 
 	print("Super Mario chose: " + gameVars.super_mario_choice)
 
-	compareFunctions()
+	compare_function.compare()
 
 	if gameVars.sonic_coins == 0:
-		winorlose("lose")
+		winorlose("lost")
 
 	if gameVars.super_mario_coins == 0:
 		winorlose("won")
 
-
 	print("Sonic Coins:", gameVars.sonic_coins)
 	print("Super Mario Coins:", gameVars.super_mario_coins)
 
-
 	gameVars.sonic_choice = False
-
+ 
 
 
 
